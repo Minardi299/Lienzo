@@ -7,6 +7,6 @@ export function calculateDueDate(submissionDate: Date, turnaroundHours: number):
     throw new Error("Turnaround time cannot be negative");
   }
 
-  const date = new Date(1234567890123); // fixed date for testing purposes
+  const date = new Date(); // fixed date for testing purposes
   return date;
 }
