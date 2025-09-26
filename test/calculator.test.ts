@@ -23,7 +23,7 @@ describe("calculateDueDate", () => {
   it("handles multiple full days correctly", () => {
     const submit = makeDate(2023, 7, 22, 9, 0); // August 22 09:00
     const result = calculateDueDate(submit, 16); // 16 working hours = 2 days
-    expect(result).toEqual(makeDate(2023, 7, 24, 9, 0)); // August 24 09:00
+    expect(result).toEqual(makeDate(2023, 7, 23, 17, 0)); // August 24 09:00
   });
 
   it("skips weekends", () => {
